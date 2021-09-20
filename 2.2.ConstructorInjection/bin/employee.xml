@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="emp1" class="com.pojo.Employee">
+		<property name="empId" value="MS1452"></property>
+		<property name="empName" value="Kuruva"></property>
+	</bean>
+	
+	<bean id="emp2" class="com.pojo.Employee">
+		<property name="empId" value="MS1452"></property>
+		<property name="empName" value="Kuruva"></property>
+		<property name="empSal" value="521000"></property>
+	</bean>
+	
+	<bean id="emp" class="com.pojo.Employee">
+		<constructor-arg value="r1234"></constructor-arg>
+		<constructor-arg value="ganesh"></constructor-arg>
+		<constructor-arg value="52000"></constructor-arg>
+	</bean>
+
+	<!-- if both constructor and injection is declared which is taken priority -->
+
+
+</beans>
