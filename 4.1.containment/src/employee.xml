@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	
+	<bean id="add" class="com.pojo.Address" scope="prototype">
+		<property name="city" value="Bangalore"></property>
+		<property name="pincode" value="560048"></property>
+	</bean>
+	
+	<bean id="emp" class="com.pojo.Employee" scope="prototype">
+		<property name="empName" value="Satya"></property>
+		<property name="address" ref = "add"></property>
+	</bean>
+</beans>
