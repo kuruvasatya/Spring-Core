@@ -8,9 +8,15 @@ import com.pojo.Software;
 
 public class Computer {
 	
-	// Autowire byName
+	/*
+	 * 1. Searches the XML file byType
+	 * 2. If multiple beans of same type then searches using byName
+	 * 3. If byName fails then throws error
+	 */
+	
+	// Autowire byType -> byName
 	@Autowired
-	@Qualifier("hard2")
+	@Qualifier("hard1")
 	Hardware hardware;
 	
 	// Autowire byType
