@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="hard" class ="com.pojo.Hardware">
+		<property name="display" value="samsung"></property>
+		<property name="keybord" value="dell"></property>
+	</bean>
+	
+	<bean id="hard1" class ="com.pojo.Hardware">
+		<property name="display" value="Nokia"></property>
+		<property name="keybord" value="HP"></property>
+	</bean>
+	 
+	<bean id="soft" class="com.pojo.Software">
+		<property name="os" value="Windows"></property>
+	</bean>
+	
+	<bean id ="comp" class="com.pojo.Computer" autowire="constructor">
+	</bean>
+	
+	
+</beans>
