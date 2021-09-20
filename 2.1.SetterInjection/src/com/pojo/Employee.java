@@ -5,6 +5,11 @@ public class Employee {
 	private String empName;
 	private double empSal;
 
+	// Setter injection should have default constructor else it throws error
+//	public Employee(String empId) {
+//		super();
+//	}
+
 	public String getEmpId() {
 		return empId;
 	}
